@@ -1,0 +1,23 @@
+.video{
+margin: 25px 285px
+}
+
+.video-box{
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 30%);
+  border: 1px solid #28282A;
+  border-radius: 24px;
+}
+
+.video-box h6{
+  /* word-break: break-all; */
+    font-size: xx-large;
+    /* overflow-wrap: break-word; */
+    padding-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

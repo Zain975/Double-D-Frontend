@@ -1,0 +1,15 @@
+.music{
+    display: flex;
+}
+.music-search{
+    display: flex;
+    flex: 2;
+    background-color: #28282A;
+    /* height: 100vh; */
+
+}
+.music-audios{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}

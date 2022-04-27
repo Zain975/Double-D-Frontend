@@ -1,0 +1,26 @@
+.name{
+    /* width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #59b256;
+  background-color: white; */
+  /* position: fixed !important;
+  bottom: 18px;
+  right: 20px;
+  font-size: larger; */
+
+  /* z-index: 999; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around !important; */
+
+  position: fixed !important;
+    /* bottom: -1000px;
+    right: -5480px; */
+    bottom: 10px;
+    right: 35px;
+    font-size: 40px;
+}
+.bold{
+    font-weight: 800;
+}

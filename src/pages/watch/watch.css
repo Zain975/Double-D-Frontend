@@ -1,0 +1,10 @@
+.watch {
+    width: 100vw;
+    height: 100vh;
+}
+  
+.watch-video {
+    width: 5760px;
+    height: 1080px;
+    object-fit: cover;
+    }

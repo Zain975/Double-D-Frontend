@@ -1,0 +1,30 @@
+
+.menu{
+    width: 5760px !important;
+    height: 1080px !important;
+    margin-top: 2%;
+    position: fixed;
+    font-size: xx-large !important;
+}
+.time {
+    margin-left: 100px;
+}
+.options{
+    top: 48%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.button{
+    font-size: 75px;
+    background-color: rgba(40, 40, 42, 0.5);
+    outline: none;
+    border: none;
+    width: 800px;
+    height: fit-content;
+    cursor: pointer;
+    padding: 55px 0px;
+    margin: 0px 320px
+}
+

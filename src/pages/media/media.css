@@ -1,0 +1,23 @@
+/* *{
+    height: auto;
+    width: auto;
+  } */
+.media{
+    display: flex;
+    /* height: auto !important;
+    width: auto !important; */
+    /* position: fixed; */
+}
+.media-search{
+    display: flex;
+    flex: 2;
+    background-color: #28282A;
+
+}
+
+.media-videos{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+

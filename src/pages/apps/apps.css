@@ -1,0 +1,22 @@
+.options-row{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    top: 50%;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+}
+.options-link{
+    margin: 0px 750px;
+}
+
+img{
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+}
+
+img:hover{
+    cursor: pointer;
+}

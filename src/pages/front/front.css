@@ -1,0 +1,38 @@
+body{
+  background-image: url("../../img/background.png");
+  object-fit: cover;
+}
+li{
+  list-style: none;
+}
+.front{
+  /* position: fixed; */
+  margin-top: 2%;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.front-top{
+  display: flex;
+}
+
+.front-time{
+  display: flex;
+    justify-content: center;
+}
+.front-weather{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.arrow-up{
+  display: flex;
+  justify-content: center;
+  position: fixed !important;
+  bottom: 0px;
+  font-weight: 900;
+  font-size: 5.5em !important;
+  right: 50%;
+  left: 50%;
+}
