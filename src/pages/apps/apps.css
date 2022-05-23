@@ -1,20 +1,22 @@
 .options-row{
     text-align: center;
-    justify-content: space-around;
-    display: flex;
-    top: 50%;
-    position: fixed;
-    left: 50%;
-    right: 50%;
+    padding-top: 50px;
+    /* justify-content: space-around; */
+    /* display: flex; */
+    /* top: 50%; */
+    /* position: fixed; */
+    /* left: 50%; */
+    /* right: 50%; */
 }
 .options-link{
-    margin: 0px 750px;
+    margin: 0px 265px;
 }
 
-img{
-    width: 200px;
-    height: 130px;
-    border-radius: 20px;
+a > img{
+    width: 295px;
+    height: 150px;
+    padding: 90px;
+    /* border-radius: 20px; */
 }
 
 img:hover{

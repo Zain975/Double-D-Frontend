@@ -1,8 +1,9 @@
 import ArrowBackOutlined from "@mui/icons-material/ArrowBackOutlined";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import AudioSpectrum from "react-audio-spectrum";
 import { Link, useLocation } from "react-router-dom";
 import "./play.css";
+import axios from "../../axios";
 // import { useVisualizer, models } from "react-audio-viz";
 // import {
 //   SpectrumVisualizer,
@@ -12,13 +13,25 @@ import "./play.css";
 // import AudioMotionAnalyzer from "audiomotion-analyzer";
 // import Swave from "swave"
 function Play() {
+  const [background, setBackground] = useState([]);
+
   const location = useLocation();
   const audio = location.audio;
 
   const audioRef = React.useRef(null);
 
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get("/setBackground/getMusicPBg");
+      setBackground(req.data);
+    }
+    fetchData();
+  }, []);
   return (
-    <div className='play'>
+    <div
+      className='play'
+      style={{ backgroundImage: `url(${background.imgUrl})` }}
+    >
       <Link to='/music'>
         <div className='back'>
           <ArrowBackOutlined style={{ width: "100px", height: "80px" }} />

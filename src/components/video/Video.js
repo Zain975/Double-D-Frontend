@@ -40,7 +40,7 @@ function Video(props) {
     <div className='video'>
       <Link to={{ pathname: `/watch/${video._id}`, video: video }}>
         <div className='video-box'>
-          <img src={play} />
+          <img className='video-img' src={play} />
           <h6>{video.title}</h6>
         </div>
       </Link>

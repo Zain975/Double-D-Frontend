@@ -21,3 +21,7 @@ margin: 25px 285px
    text-overflow: ellipsis;
    white-space: nowrap;
 }
+.audio-img{
+  width: 200px;
+  height: 160px;
+}

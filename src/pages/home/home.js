@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
+import axios from "../../axios";
+
 function Home() {
+  const [background, setBackground] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get("/setBackground/getHomeBg");
+      setBackground(req.data);
+    }
+    fetchData();
+  }, []);
+
   return (
     <div>
       <style
@@ -12,7 +24,10 @@ function Home() {
       {/* basic-bitch state management*/}
       {/* night mode*/}
       <input type='checkbox' id='mode' defaultChecked='' />
-      <div className='bg'>
+      <div
+        className='bg'
+        style={{ backgroundImage: `url(${background.imgUrl})` }}
+      >
         <label htmlFor='mode'>
           <span />
         </label>

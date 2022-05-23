@@ -8,6 +8,15 @@ import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 
 function MusicPage() {
   const [audio, setAudio] = useState([]);
+  const [background, setBackground] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get("/setBackground/getMusicBg");
+      setBackground(req.data);
+    }
+    fetchData();
+  }, []);
   useEffect(() => {
     async function fetchData() {
       const req = await axios.get("/uploads/audiolistt");
@@ -17,7 +26,10 @@ function MusicPage() {
   }, []);
 
   return (
-    <div className='music'>
+    <div
+      className='music'
+      style={{ backgroundImage: `url(${background.imgUrl})` }}
+    >
       <Link to='/menu'>
         <div className='back'>
           <ArrowBackOutlinedIcon style={{ width: "100px", height: "80px" }} />
