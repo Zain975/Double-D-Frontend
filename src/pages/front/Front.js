@@ -7,13 +7,23 @@ import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp
 import { Link } from "react-router-dom";
 
 function Front() {
+  const [background, setBackground] = useState([]);
   const [time, setTime] = useState([]);
   const [weather, setWeather] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
+      const req = await axios.get("/setBackground/getFrontBg");
+      setBackground(req.data);
+    }
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    async function fetchData() {
       const req = await axios.get("/timezone/time");
       setTime(req.data);
+      setInterval(fetchData, 1000);
     }
     fetchData();
   }, []);
@@ -29,24 +39,27 @@ function Front() {
   // console.log(weather);
 
   return (
-    <div>
+    <div
+      className='front-page'
+      style={{ backgroundImage: `url(${background.imgUrl})` }}
+    >
       <div className='front'>
         {/* <div className='front-top'> */}
         <div className='front-time'>{time.data}</div>
         <div className='front-weather'>
-          <img src={weather2} />
+          <img className='front-weather-img' src={weather2} />
           {weather.data}°F
         </div>
         {/* </div> */}
       </div>
 
-      <div>
-        <Link to='menu'>
-          <KeyboardDoubleArrowUpIcon className='arrow-up' />
-        </Link>
+      {/* <div> */}
+      <Link to='menu'>
+        <KeyboardDoubleArrowUpIcon className='arrow-up' />
+      </Link>
 
-        <Name />
-      </div>
+      <Name />
+      {/* </div> */}
     </div>
   );
 }

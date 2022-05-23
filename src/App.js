@@ -8,10 +8,18 @@ import Apps from "./pages/apps/Apps";
 import Play from "./pages/play/Play";
 import Home from "./pages/home/home";
 import MusicPage from "./pages/music/MusicPage";
+import MobHome from "./pages/mobhome/MobHome.component";
+import axios from "./axios";
+import MyLife from "./pages/myLife/MyLife";
+
 function App() {
   return (
     <Router>
       <Switch>
+        {/* <Route path='/' exact>
+          <MobHome />
+        </Route> */}
+
         <Route path='/' exact>
           <Front />
         </Route>
@@ -29,6 +37,9 @@ function App() {
         </Route>
         <Route path='/home'>
           <Home />
+        </Route>
+        <Route path='/myLife'>
+          <MyLife />
         </Route>
         <Route path='/watch/:id'>
           <Watch />

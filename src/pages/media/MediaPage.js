@@ -7,7 +7,17 @@ import { Link } from "react-router-dom";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 
 function MediaPage() {
+  const [background, setBackground] = useState([]);
   const [video, setVideo] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get("/setBackground/getMediaBg");
+      setBackground(req.data);
+    }
+    fetchData();
+  }, []);
+
   useEffect(() => {
     async function fetchData() {
       const req = await axios.get("/uploads/videolistt");
@@ -16,7 +26,10 @@ function MediaPage() {
     fetchData();
   }, []);
   return (
-    <div className='media'>
+    <div
+      className='media'
+      style={{ backgroundImage: `url(${background.imgUrl})` }}
+    >
       <Link to='/menu'>
         <div className='back'>
           <ArrowBackOutlinedIcon style={{ width: "100px", height: "80px" }} />

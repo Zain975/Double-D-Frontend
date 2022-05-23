@@ -1,0 +1,14 @@
+.myLife-options-row{
+    /* text-align: center; */
+    display: flex;
+
+    justify-content: center;
+    /* padding-top: 10%; */
+    top: 80%;
+    position: relative;
+    /* left: 50%; */
+    /* right: 50%; */
+}
+.myLife-options-link{
+    margin: 0px 60px;
+ }
