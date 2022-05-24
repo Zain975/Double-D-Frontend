@@ -9,7 +9,6 @@ import Play from "./pages/play/Play";
 import Home from "./pages/home/home";
 import MusicPage from "./pages/music/MusicPage";
 import MobHome from "./pages/mobhome/MobHome.component";
-import axios from "./axios";
 import MyLife from "./pages/myLife/MyLife";
 
 function App() {
