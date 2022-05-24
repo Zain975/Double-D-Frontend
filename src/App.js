@@ -15,10 +15,6 @@ function App() {
   return (
     <Router>
       <Switch>
-        {/* <Route path='/' exact>
-          <MobHome />
-        </Route> */}
-
         <Route path='/' exact>
           <Front />
         </Route>
@@ -45,6 +41,9 @@ function App() {
         </Route>
         <Route path='/play/:id'>
           <Play />
+        </Route>
+        <Route path='/remote'>
+          <MobHome />
         </Route>
       </Switch>
     </Router>
