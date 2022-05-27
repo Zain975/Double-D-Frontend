@@ -1,3 +1,4 @@
+import React from "react";
 import "./app.css";
 import MediaPage from "./pages/media/MediaPage";
 import Watch from "./pages/watch/Watch";
