@@ -1,3 +1,4 @@
+import React from "react";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import { Link, useLocation } from "react-router-dom";
 import "./watch.css";
