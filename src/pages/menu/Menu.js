@@ -8,7 +8,8 @@ import mylife from "../../img/mylife.png";
 import domotics from "../../img/domotics.png";
 import tv from "../../img/tv.png";
 import music from "../../img/music.png";
-
+import backgroundd from "../../img/backgroundd.png";
+import utility from "../../img/utility.png";
 import PermMediaOutlinedIcon from "@mui/icons-material/PermMediaOutlined";
 function Menu() {
   const [background, setBackground] = useState([]);
@@ -28,7 +29,7 @@ function Menu() {
       const req = await axios.get("/timezone/time");
       setTime(req.data);
 
-      setInterval(fetchData, 1000);
+      // setInterval(fetchData, 1000);
     }
     fetchData();
   }, []);
@@ -41,9 +42,14 @@ function Menu() {
       <h2 className='menu-time'>{time.data}</h2>
       <div className='menu-options'>
         <button className='menu-button'>
-          <Link to='media'>
-            <img className='menu-img' src={music} />
-            Media
+          <Link to='apps'>
+            <img className='menu-img' src={tv} />
+            TV
+          </Link>
+        </button>
+        <button className='menu-button'>
+          <Link to='myLife'>
+            <img className='menu-img' src={mylife} /> My life
           </Link>
         </button>
         <button className='menu-button'>
@@ -53,20 +59,20 @@ function Menu() {
           </Link>
         </button>
         <button className='menu-button'>
-          <Link to='apps'>
-            <img className='menu-img' src={tv} />
-            TV
+          <Link to='media'>
+            <img className='menu-img' src={backgroundd} />
+            Background
           </Link>
         </button>
+        <button className='menu-button'>
+          <img className='menu-img' src={utility} />
+          Utility
+        </button>
+
         <button className='menu-button'>
           <Link to='home'>
             <img className='menu-img' src={domotics} />
             Domotics
-          </Link>
-        </button>
-        <button className='menu-button'>
-          <Link to='myLife'>
-            <img className='menu-img' src={mylife} /> My life
           </Link>
         </button>
       </div>

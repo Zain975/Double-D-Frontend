@@ -11,13 +11,19 @@
 .options-link{
     margin: 0px 265px;
 }
-
-a > img{
+.options-link-img{
     width: 295px;
     height: 150px;
     padding: 90px;
-    /* border-radius: 20px; */
 }
+/* a > img{
+    width: 295px;
+    height: 150px;
+    padding: 90px;
+    border-radius: 20px;
+} */
+
+
 
 img:hover{
     cursor: pointer;
