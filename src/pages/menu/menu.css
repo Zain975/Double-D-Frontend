@@ -19,7 +19,8 @@
 }
 .menu-button {
   font-size: 75px;
-  background-color: rgba(40, 40, 42, 0.5);
+  /* background-color: rgba(40, 40, 42, 0.5); */
+  background-color: transparent;
   outline: none;
   border: none;
   width: 800px;
@@ -31,7 +32,8 @@
 }
 .menu-img {
   width: 295px;
-  /* height: 150px; */
   padding: 0px 65px;
+
+  /* height: 150px; */
   /* border-radius: 20px; */
 }

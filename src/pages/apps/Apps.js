@@ -43,40 +43,40 @@ function Apps() {
       </Link>
       <div className='options-row'>
         <a className='options-link' href='https://www.netflix.com/'>
-          <img src={netflix} />
+          <img className='options-link-img' src={netflix} />
         </a>
         <a className='options-link' href='https://www.dazn.com/'>
-          <img src={DAZN} />
+          <img className='options-link-img' src={DAZN} />
         </a>
         <a className='options-link' href='https://www.raiplay.it/'>
-          <img src={raiplay} />
+          <img className='options-link-img' src={raiplay} />
         </a>
         <a className='options-link' href='https://www.rainews.it/'>
-          <img src={rainews} />
+          <img className='options-link-img' src={rainews} />
         </a>
         <a className='options-link' href='https://www.nowtv.com/'>
-          <img src={nowtv} />
+          <img className='options-link-img' src={nowtv} />
         </a>
         <a className='options-link' href='https://www.disney.com/'>
-          <img src={disnep} />
+          <img className='options-link-img' src={disnep} />
         </a>
         <a className='options-link' href='https://www.youtube.com/'>
-          <img src={youtube} />
+          <img className='options-link-img' src={youtube} />
         </a>
         <a className='options-link' href='https://www.primevideo.com/'>
-          <img src={primevideo} />
+          <img className='options-link-img' src={primevideo} />
         </a>
         <a className='options-link' href='https://uk.chili.com/'>
-          <img src={chilicinema} />
+          <img className='options-link-img' src={chilicinema} />
         </a>
         <a className='options-link' href='https://www.bbc.com/'>
-          <img src={bbcnews} />
+          <img className='options-link-img' src={bbcnews} />
         </a>
         <a className='options-link' href='https://www.france24.com/'>
-          <img src={france24} />
+          <img className='options-link-img' src={france24} />
         </a>
         <a className='options-link' href='https://www.ocbs.com/'>
-          <img src={ocbs} />
+          <img className='options-link-img' src={ocbs} />
         </a>
       </div>
       <Name />

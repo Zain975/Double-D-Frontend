@@ -23,7 +23,7 @@ function Front() {
     async function fetchData() {
       const req = await axios.get("/timezone/time");
       setTime(req.data);
-      setInterval(fetchData, 1000);
+      // setInterval(fetchData, 1000);
     }
     fetchData();
   }, []);
