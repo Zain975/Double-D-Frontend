@@ -56,6 +56,20 @@ class MobHome extends Component {
   handleClickBtn = (btn) => {
     socket.mouseClick({ button: btn, double: true });
   };
+
+  // keyboard
+  // handleKeyUp = (event) => {
+  //   const { onType } = this.props;
+  //   // event.preventDefault();
+  //   const alt = event.altKey || false;
+  //   const ctrl = event.ctrlKey || false;
+  //   const shift = event.shiftKey || false;
+  //   const meta = event.metaKey || false;
+  //   const code = event.which || event.keyCode;
+  //   const string = event.target.value;
+  //   event.target.value = "";
+  //   onType({ alt, ctrl, shift, meta, code, string });
+  // };
   render() {
     return (
       <div className='home-container'>
@@ -70,7 +84,7 @@ class MobHome extends Component {
           onClick={this.handleClick}
           onKeyPressCapture={this.handleLongPress}
         >
-          <img width='50' height='50' alt='mouse' src='/img/mouse.png'></img>
+          {/* <img width='50' height='50' alt='mouse' src='/img/mouse.png'></img> */}
         </div>
         <div className='buttons'>
           <button className='btn' onClick={() => this.handleClickBtn("left")}>
@@ -80,6 +94,14 @@ class MobHome extends Component {
             Right
           </button>
         </div>
+        {/* <div>
+          <input
+            // autoComplete='new-password'
+            onKeyUp={this.handleKeyUp}
+            // placeholder={String.fromCharCode(parseInt("e803", 16))}
+            // type='password'
+          />
+        </div> */}
       </div>
     );
   }

@@ -30,10 +30,10 @@ li{
   /* justify-content: center; */
   flex-direction: column;
 }
-.front-weather-img{
-  width: 255px ;
-  height: 250px;
-}
+/* .front-weather-img{ */
+  /* width: 255px ; */
+  /* height: 250px; */
+/* } */
 .arrow-up{
   display: flex;
   justify-content: center;
