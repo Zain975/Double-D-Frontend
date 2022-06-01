@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
+import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+
 import axios from "../../axios";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [background, setBackground] = useState([]);
@@ -15,6 +18,12 @@ function Home() {
 
   return (
     <div>
+      <Link to='/menu'>
+        <div className='back'>
+          <ArrowBackOutlinedIcon style={{ width: "100px", height: "80px" }} />
+          Back
+        </div>
+      </Link>
       <style
         dangerouslySetInnerHTML={{
           __html:
