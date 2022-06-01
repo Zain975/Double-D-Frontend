@@ -1,6 +1,6 @@
 .options-row{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 200px;
     /* justify-content: space-around; */
     /* display: flex; */
     /* top: 50%; */
@@ -12,9 +12,9 @@
     margin: 0px 265px;
 }
 .options-link-img{
-    width: 295px;
-    height: 150px;
-    padding: 90px;
+    /* width: 295px; */
+    /* height: 150px; */
+    padding: 40px;
 }
 /* a > img{
     width: 295px;

@@ -12,7 +12,7 @@
 .menu-options {
   top: 48%;
   /* position: fixed; */
-  padding-top: 5%;
+  padding-top: 7%;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -31,7 +31,7 @@
   text-align: center;
 }
 .menu-img {
-  width: 295px;
+  /* width: 295px; */
   padding: 0px 65px;
 
   /* height: 150px; */

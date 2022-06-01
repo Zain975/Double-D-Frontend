@@ -2,7 +2,7 @@ import axios from "../../axios";
 import React, { useEffect, useState } from "react";
 import "./front.css";
 import Name from "../../components/name/Name";
-import weather2 from "../../img/weather2.png";
+import weatherr from "../../img/weatherr.png";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import { Link } from "react-router-dom";
 
@@ -47,7 +47,7 @@ function Front() {
         {/* <div className='front-top'> */}
         <div className='front-time'>{time.data}</div>
         <div className='front-weather'>
-          <img className='front-weather-img' src={weather2} />
+          <img className='front-weather-img' src={weatherr} />
           {weather.data}°F
         </div>
         {/* </div> */}

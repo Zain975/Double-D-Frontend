@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import "./myLife.css";
 import { Link } from "react-router-dom";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import PinterestIcon from "@mui/icons-material/Pinterest";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
+import facebook from "../../img/facebook.png";
+import instagram from "../../img/instagram.png";
+import linkedin from "../../img/linkedin.png";
+import pintrest from "../../img/pintrest.png";
+import youtubee from "../../img/youtubee.png";
+
 import axios from "../../axios";
 
 function MyLife() {
@@ -32,19 +38,28 @@ function MyLife() {
       </Link>
       <div className='myLife-options-row'>
         <a className='myLife-options-link' href='https://www.facebook.com/'>
-          <FacebookIcon style={{ width: "120px", height: "120px" }} />
+          <img src={facebook} />
+
+          {/* <FacebookIcon style={{ width: "120px", height: "120px" }} /> */}
         </a>
         <a className='myLife-options-link' href='https://www.instagram.com/'>
-          <InstagramIcon style={{ width: "120px", height: "120px" }} />
+          {/* <InstagramIcon style={{ width: "120px", height: "120px" }} /> */}
+          <img src={instagram} />
         </a>
         <a className='myLife-options-link' href='https://www.linkedin.com/'>
-          <LinkedInIcon style={{ width: "120px", height: "120px" }} />
+          <img src={linkedin} />
+
+          {/* <LinkedInIcon style={{ width: "120px", height: "120px" }} /> */}
         </a>
         <a className='myLife-options-link' href='https://www.pinterest.com/'>
-          <PinterestIcon style={{ width: "120px", height: "120px" }} />
+          <img src={pintrest} />
+
+          {/* <PinterestIcon style={{ width: "120px", height: "120px" }} /> */}
         </a>
         <a className='myLife-options-link' href='https://www.youtube.com/'>
-          <YouTubeIcon style={{ width: "120px", height: "120px" }} />
+          <img src={youtubee} />
+
+          {/* <YouTubeIcon style={{ width: "120px", height: "120px" }} /> */}
         </a>
       </div>
     </div>
