@@ -26,7 +26,6 @@ function MediaPage() {
     fetchData();
   }, []);
   return (
-    // media
     <div
       className='media'
       style={{
