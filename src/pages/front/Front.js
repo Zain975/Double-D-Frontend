@@ -48,7 +48,7 @@ function Front() {
         <div className='front-time'>{time.data}</div>
         <div className='front-weather'>
           <img className='front-weather-img' src={weatherr} />
-          {weather.data}°F
+          {weather.data}° C
         </div>
         {/* </div> */}
       </div>
