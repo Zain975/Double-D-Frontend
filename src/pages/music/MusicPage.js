@@ -28,7 +28,11 @@ function MusicPage() {
   return (
     <div
       className='music'
-      style={{ backgroundImage: `url(${background.imgUrl})` }}
+      style={{
+        backgroundImage: `url(${background.imgUrl})`,
+        height: "1080px",
+        width: "5760px",
+      }}
     >
       <Link to='/menu'>
         <div className='back'>

@@ -18,7 +18,6 @@ function Home() {
 
   return (
     <div>
-      svg
       <Link to='/menu'>
         <div className='back'>
           <ArrowBackOutlinedIcon style={{ width: "100px", height: "80px" }} />

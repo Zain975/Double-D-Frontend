@@ -1,5 +1,6 @@
 .music{
     display: flex;
+    height: -webkit-fill-available
 }
 .music-search{
     display: flex;
