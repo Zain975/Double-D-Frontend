@@ -28,7 +28,9 @@ function MediaPage() {
   return (
     <div
       className='media'
-      style={{ backgroundImage: `url(${background.imgUrl})` }}
+      style={{ backgroundImage: `url(${background.imgUrl})`,
+        height: "1080px",
+        width: "5760px", }}
     >
       <Link to='/menu'>
         <div className='back'>
